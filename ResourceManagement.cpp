@@ -7,7 +7,7 @@
 
 UResourceManagement::UResourceManagement(const FObjectInitializer& ObjectInitializer): UUserWidget(ObjectInitializer)
 {
-	
+	//constructor, empty for now
 }
 
 bool UResourceManagement::Initialize()
@@ -44,6 +44,8 @@ void UResourceManagement::SetStartValues()
 	CurrentResourcePool = MaxResourcePoolValue;
 	ResourcesVisual->SetPercent(1);
 }
+
+//update functions called via UMG on button click events
 
 void UResourceManagement::UpdateResourcePool(int value)
 {
